@@ -1,0 +1,15 @@
+#!/bin/sh
+echo "Starting Opal services ..."
+
+# CHANGEME
+cd ~/Sites/opal
+echo "  * * * redis"
+nohup redis-server&
+echo "  * * * resque"
+nohup bundle exec rake resque:work RAILS_ENV="development" QUEUE=*&
+echo "  * * * sphinx"
+bundle exec rake ts:start
+# CHANGEME
+cd ~/Sites/juggernaut/
+echo "  * * * juggernaut"
+sudo node server.js
