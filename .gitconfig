@@ -1,0 +1,5 @@
+[user]
+	name = Jeff Boek
+	email = jeff@jeffboek.com
+[push]
+	default = simple
