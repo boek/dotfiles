@@ -1,0 +1,10 @@
+#!/bin/h
+
+##
+## et
+##
+## Start a terminal Emacs client or fall back to a new terminal instance.
+
+set -e
+EMACSCLIENT=/usr/local/bin/emacsclient
+exec $EMACSCLIENT -t -a emacs "$@"
