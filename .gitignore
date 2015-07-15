@@ -1,0 +1,11 @@
+.DS_Store
+vim/.netrwhist
+vim/backups
+vim/bundle
+emacs.d/.emacs.desktop
+emacs.d/.emacs.desktop.lock
+emacs.d/auto-save-list
+emacs.d/el-get
+emacs.d/ac-comphist.dat
+emacs.d/projectile-bookmarks.eld
+emacs.d/projectile.cache
