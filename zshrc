@@ -1,7 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jeffboek/.oh-my-zsh
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -55,14 +53,17 @@ plugins=(git rails ruby)
 
 # User configuration
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jeffboek/.bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-export EDITOR='vim'
+export EDITOR='atom'
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -82,6 +83,8 @@ export EDITOR='vim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias opalup="cd ~/git/opallabs/opal && foreman start -f Procfile.development"
+alias dotfiles="cd ~/git/boek/.dotfiles"
+
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
