@@ -63,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-export EDITOR='atom'
+export EDITOR='vim'
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -85,6 +85,6 @@ export EDITOR='atom'
 # Example aliases
 alias opalup="cd ~/git/opallabs/opal && foreman start -f Procfile.development"
 alias dotfiles="cd ~/git/boek/.dotfiles"
-
+alias opal="cd ~/git/opallabs/opal"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

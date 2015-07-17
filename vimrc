@@ -7,6 +7,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>v :vnew <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
 
+set tabstop=2                    " Softer tabs
 set number                       " Display the line numbers beside the buffer
 set nocompatible                 " Don't maintain compatibility with Vi.
 set hidden                       " Allow buffer change w/o saving
@@ -32,6 +33,7 @@ Plugin 'ctrlpvim/ctrlp.vim'      " CTRL + P
 Plugin 'tpope/vim-surround'      " Surround
 Plugin 'tpope/vim-repeat'        " Repeat
 Plugin 'tpope/vim-commentary'    " Supercharged Comments
+Plugin 'toyamarinyon/vim-swift'  " Swift!
 
 call vundle#end()
 filetype plugin indent on        " Required
