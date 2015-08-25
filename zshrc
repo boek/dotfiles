@@ -52,29 +52,9 @@ ZSH_THEME="theunraveler"
 plugins=(git rails ruby)
 
 # User configuration
+source $ZSH/oh-my-zsh.sh                                                         # import
+source $HOME/.aliases                                                            # import aliases
+source $HOME/.sources                                                            # import sources
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jeffboek/.bin"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-source $ZSH/oh-my-zsh.sh
-source $HOME/.aliases
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-export EDITOR='vim'
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi                      # init rbenv
+export EDITOR='vim'                                                              # editor
