@@ -56,5 +56,5 @@ source $ZSH/oh-my-zsh.sh                                                        
 source $HOME/.aliases                                                            # import aliases
 source $HOME/.sources                                                            # import sources
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi                      # init rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi                  # init rbenv
 export EDITOR='vim'                                                              # editor
