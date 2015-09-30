@@ -3,4 +3,5 @@ alias dotfiles="cd ~/git/boek/dotfiles"
 alias opal="cd ~/git/opallabs/opal"
 alias approvals="cd ~/git/opallabs/Approvals"
 alias opalkit="cd ~/git/opallabs/OpalKit"
+alias dispatch="cd ~/git/opallabs/Dispatch-iOS"
 alias sourcekitsad='rm -rf ~/Library/Developer/Xcode/DerivedData'
