@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jeffboek/.oh-my-zsh
 
-ZSH_THEME="theunraveler" # Set name of the theme to load.
+ZSH_THEME="robbyrussell" # Set name of the theme to load.
 plugins=(git)
 
 # User configuration
