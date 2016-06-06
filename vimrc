@@ -4,4 +4,5 @@ set nocompatible                 " Don't maintain compatibility with Vi.
 set hidden                       " Allow buffer change w/o saving
 set history=1000                 " Remember last 1000 commands
 set scrolloff=4                  " Keep at least 4 lines below the cursor
-syntax on
+syntax on                        " Enable syntax highlighting
+set t_Co=256                     " Set 256 colors
