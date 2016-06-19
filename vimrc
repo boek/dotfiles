@@ -17,7 +17,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'neovimhaskell/haskell-vim'
-Plugin 'whatyouhide/vim-gotham'
 
 call vundle#end()            " required
 
@@ -29,10 +28,8 @@ let g:bufferline_echo = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|vendor\/bundle|vendor\/gems|tmp|node_modules$'
-set t_Co=256                     " Set 256 colors
-set background=dark
 syntax on                        " Enable syntax highlighting
-colorscheme gotham256
+colorscheme default
 set tabstop=2                    " Softer tabs
 set shiftwidth=2
 set expandtab
