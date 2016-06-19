@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh                                                # Path to your oh-my-zsh installation.
-# Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+# Gotham Shell
+GOTHAM_SHELL="$HOME/.config/gotham/gotham.sh"
+[[ -s $GOTHAM_SHELL  ]] && source $GOTHAM_SHELL
 ZSH_THEME="robbyrussell"                                                         # Set name of the theme to load.
 plugins=(bundler rbenv git)
 
