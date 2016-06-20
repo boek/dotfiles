@@ -1,10 +1,7 @@
-set nocompatible                 " Don't maintain compatibility with Vi.
-filetype on
-filetype off                  " required
+set nocompatible " Don't maintain compatibility with Vi.
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'keith/rspec.vim'
@@ -17,7 +14,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'neovimhaskell/haskell-vim'
-
 call vundle#end()            " required
 
 set autoindent
@@ -39,6 +35,4 @@ set history=1000                 " Remember last 1000 commands
 set scrolloff=4                  " Keep at least 4 lines below the cursor
 set listchars=tab:▸\ ,eol:¬      " Whitespace character for :set list
 set noswapfile                   " Gets ride of the *.swp files
-set shell=$SHELL
-
 map <C-n> :NERDTreeToggle<CR>
