@@ -29,7 +29,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|vendor\/bundle|vendor\/gems|tmp|node_modules$'
 syntax on                        " Enable syntax highlighting
-colorscheme default
+colorscheme peachpuff
 set tabstop=2                    " Softer tabs
 set shiftwidth=2
 set expandtab
