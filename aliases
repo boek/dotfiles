@@ -1,4 +1,4 @@
-alias opalup="cd ~/git/opallabs/opal && foreman start -f Procfile.development"
+alias blog="cd ~/git/boek/boek.github.io"
 alias dotfiles="cd ~/git/boek/dotfiles"
 alias approvals="cd ~/git/opallabs/Approvals"
 alias opal="cd ~/git/opallabs/opal"
