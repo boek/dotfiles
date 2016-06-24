@@ -16,6 +16,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'neovimhaskell/haskell-vim'
+Plugin 'vim-scripts/SyntaxRange'
+Plugin 'tpope/vim-markdown'
 call vundle#end()            " required
 
 set autoindent
