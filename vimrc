@@ -18,6 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'vim-scripts/SyntaxRange'
 Plugin 'tpope/vim-markdown'
+Plugin 'junegunn/goyo.vim'
 call vundle#end()            " required
 
 set autoindent
@@ -43,4 +44,4 @@ set listchars=tab:▸\ ,eol:¬      " Whitespace character for :set list
 set noswapfile                   " Gets ride of the *.swp files
 map <C-n> :NERDTreeToggle<CR>    " Keyboard shortcut for Nerdtree
 autocmd BufNewFile,BufRead *.md set filetype=markdown "markdown syntax
-
+noremap <leader>g :Goyo<CR>
