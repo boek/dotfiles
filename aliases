@@ -6,3 +6,4 @@ alias api="cd ~/git/opallabs/api"
 alias opalkit="cd ~/git/opallabs/OpalKit"
 alias dispatch="cd ~/git/opallabs/Dispatch-iOS"
 alias sourcekitsad='rm -rf ~/Library/Developer/Xcode/DerivedData'
+alias tmux="tmux -2"
