@@ -11,7 +11,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
-Plugin 'joshdick/airline-onedark.vim'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-markdown'
@@ -24,15 +24,15 @@ call vundle#end()            " required
 set autoindent
 filetype plugin indent on    " required
 syntax on
-colorscheme onedark
-set t_ut=
+set background=dark
+colorscheme ron
 
 
 set laststatus=2
 let g:bufferline_echo = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='onedark'
+let g:airline_theme='jay'
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|vendor\/bundle|vendor\/gems|tmp|node_modules$'
 
 set tabstop=2                    " Softer tabs
