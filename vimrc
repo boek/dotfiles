@@ -12,13 +12,9 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-markdown'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/syntastic'
-Plugin 'fsharp/vim-fsharp'
-Plugin 'keith/swift.vim'
-Plugin 'joshdick/onedark.vim'
 call vundle#end()            " required
 
 set autoindent
