@@ -1,0 +1,60 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 9,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "Fira Code",
+        "color" : "#869997FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Avenir",
+        "color" : "#92B9E2FF"
+      },
+      "backgroundSelected" : "#3A3A3A00",
+      "text" : {
+        "size" : 13,
+        "colorSelected" : "#F27E80FF",
+        "font" : "Fira Code",
+        "color" : "#5998CEFF"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 3,
+      "iconSize" : 26
+    },
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "search" : {
+      "paddingVertical" : 4,
+      "background" : "#3A3A3A00",
+      "spacing" : 8,
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#000000FF",
+        "font" : "Fira Code",
+        "color" : "#FEFFFEFF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "scrollbar" : {
+      "color" : "#D6D6D6FF",
+      "thickness" : 2
+    },
+    "name" : "Tomorrow Night",
+    "window" : {
+      "color" : "#3A3A3AC2",
+      "paddingHorizontal" : 9,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 30,
+      "roundness" : 3,
+      "paddingVertical" : 8
+    }
+  }
+}
