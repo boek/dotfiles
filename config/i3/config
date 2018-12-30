@@ -179,5 +179,5 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always feh --bg-scale $HOME/Pictures/elementary.jpg
 exec_always xrandr --output HDMI-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off --output DVI-D-1 --off --output DP-1 --off --output DP-4 --mode 2560x1440 --pos 2560x0 --rate 144.00 --rotate normal
-exec --no-startup-id xset dpms 0 0 10
-exec --no-startup-id compton -f
+exec --no-startup-id xset dpms 0 0 240
+exec_always compton -f
