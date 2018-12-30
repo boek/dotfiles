@@ -50,11 +50,11 @@
 [bar/dp_workspaces]
 	inherit = section/workspaces
 	monitor = ${env:MONITOR:DP-4}
-	tray-position = left
 
 [bar/hdmi_workspaces]
 	inherit = section/workspaces
 	monitor = ${env:MONITOR:HDMI-0}
+	tray-position = left
 
 [bar/primary]
 monitor = ${env:MONITOR:HDMI-0}
