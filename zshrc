@@ -97,3 +97,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles="cd /media/boek/in/git/boek/dotfiles/"
+alias gitdir="cd /media/boek/in/git"

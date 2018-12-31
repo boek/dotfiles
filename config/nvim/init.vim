@@ -7,9 +7,13 @@ call vundle#begin()
 
 Plugin 'dikiaap/minimalist'
 
+Plugin 'vim-syntastic/syntastic'
+Plugin 'fsharp/vim-fsharp'
+
 call vundle#end()
 
-" set t_Co=256
+set t_Co=256
 colorscheme minimalist
 filetype plugin indent on    " required
+set colorcolumn=80
 set number
