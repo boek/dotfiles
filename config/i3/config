@@ -173,7 +173,7 @@ for_window [class=".*"] border pixel 2
 client.focused          #ffb52a #285577 #ffffff #5f676a   #ffb52a
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #555
 client.unfocused        #333333 #222222 #888888 #292d2e   #555
-client.urgent           #2f343a #900000 #ffffff #900000   #FF0000
+client.urgent           #2f343a #000000 #ffffff #900000   #FF0000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 client.background       #FF0000 
 

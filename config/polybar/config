@@ -73,8 +73,8 @@ line-color = #f00
 border-size = 4
 border-color = #00000000
 
-padding-left = 10%
-padding-right = 10%
+padding-left = 5
+padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
@@ -85,8 +85,8 @@ font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=8;0"
 font-3 = "Font Awesome 5 Brands:style=Regular:pixelsize=8;0"
 
 modules-left =  filesystem memory cpu temperature eth
-modules-center = xwindow
-modules-right =  xbacklight pulseaudio date powermenu
+modules-center = date
+modules-right =  xbacklight mpd pulseaudio powermenu
 
 ;tray-transparent = true
 ;tray-background = #0063ff
@@ -203,7 +203,8 @@ label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon%
-label-urgent-background = ${module/bspwm.label-urgent-background}
+label-urgent-background = ${colors.transparent}
+label-urgent-foreground = ${colors.alert}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ; Separator in between workspaces
@@ -224,7 +225,10 @@ ws-icon-default = 
 
 [module/mpd]
 type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+format-online = <label-song>  aaa <icon-prev> <icon-stop> <toggle> <icon-next>
+host = localhost
+
+label-offline = 🎜 mpd is offline
 
 icon-prev = 
 icon-stop = 
@@ -311,7 +315,7 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 5
-format-prefix = "%{T2} %{T-} " 
+;format-prefix = "%{T2} %{T-} " 
 date = %a %d %b  - %l:%M %p
 label = %date%
 
@@ -320,11 +324,11 @@ type = internal/pulseaudio
 
 sink = alsa_output.usb-SteelSeries_SteelSeries_Arctis_7-00.analog-stereo
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <ramp-volume> <bar-volume>
 label-volume =%{T1} %{T-} 
 label-volume-foreground = ${root.foreground}
 
-label-muted = muted
+label-muted =  
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -343,6 +347,10 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 [module/alsa]
 type = internal/alsa
