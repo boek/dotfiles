@@ -164,7 +164,7 @@ mode "resize" {
 }
 
 gaps inner 15
-gaps outer 20
+gaps outer 15
 for_window [class=".*"] border pixel 2
 
 

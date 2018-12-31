@@ -28,7 +28,7 @@
 
 [settings]
 	barwidth = 100%
-	barheight = 48
+	barheight = 36
 
 [section/workspaces]
 	monitor-strict = true
