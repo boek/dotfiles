@@ -214,7 +214,7 @@ ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
-ws-icon-4 = 5;
+ws-icon-4 = 5;
 ws-icon-5 = 6;
 ws-icon-6 = 7;
 ws-icon-7 = 8;
@@ -304,7 +304,7 @@ interval = 3.0
 
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground}
-label-connected = %downspeed% / %upspeed%
+label-connected =  %downspeed%   %upspeed%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -430,6 +430,9 @@ ramp-0 = 
 ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
+
+;thermal-zone = 1
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input
 
 [module/powermenu]
 type = custom/menu

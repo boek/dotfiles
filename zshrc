@@ -1,8 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export DOTFILES_PATH="/media/boek/in/git/boek/dotfiles"
+
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/boek/.oh-my-zsh"
+export ZSH="/home/boek/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -96,5 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dotfiles="cd /media/boek/in/git/boek/dotfiles/"
+alias dotfiles="cd ${DOTFILES_PATH}"
 alias gitdir="cd /media/boek/in/git"
+
+source "${DOTFILES_PATH}/sources/nvim-aliases.sh"
