@@ -21,9 +21,9 @@
 	background-alt = #444
 	foreground = #dfdfdf
 	foreground-alt = #555
-	primary = #ffb52a
+	primary = #fee45b
 	secondary = #e60053
-	alert = #bd2c40
+	alert = #ff79c6
 	transparent = #00000000
 
 [settings]

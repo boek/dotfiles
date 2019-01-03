@@ -178,7 +178,7 @@ for_window [class=".*"] border pixel 2
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ffb52a #285577 #ffffff #5f676a   #ffb52a
+client.focused          #ff79c6 #285577 #ffffff #5f676a   #ff79c6
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #555
 client.unfocused        #333333 #222222 #888888 #292d2e   #555
 client.urgent           #2f343a #000000 #ffffff #900000   #FF0000
@@ -195,7 +195,7 @@ bindsym $mod+r mode "resize"
 #}
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always feh --bg-scale $HOME/Pictures/elementary.jpg
+exec_always feh --bg-scale $HOME/Pictures/synth.png
 exec_always xrandr --output HDMI-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off --output DVI-D-1 --off --output DP-1 --off --output DP-4 --mode 2560x1440 --pos 2560x0 --rate 144.00 --rotate normal
 exec --no-startup-id xset dpms 0 0 240
 exec_always compton -f
