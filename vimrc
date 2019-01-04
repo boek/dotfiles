@@ -5,15 +5,21 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'dikiaap/minimalist'
-
+Plugin 'dracula/vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'fsharp/vim-fsharp'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
 set t_Co=256
-colorscheme minimalist
+set guicursor=
+" Workaround some broken plugins which set guicursor indiscriminately.
+autocmd OptionSet guicursor noautocmd set guicursor=
+colorscheme dracula
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
 filetype plugin indent on    " required
 set colorcolumn=80
 set number

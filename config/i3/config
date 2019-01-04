@@ -174,7 +174,8 @@ mode "resize" {
 gaps inner 15
 gaps outer 15
 for_window [class=".*"] border pixel 2
-
+for_window[class="VidyoDesktop"] floating enable
+for_window[class="VidyoDesktop"] resize set 600 600
 
 
 # class                 border  backgr. text    indicator child_border
