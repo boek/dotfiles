@@ -1,0 +1,3 @@
+rofi.theme: .config/rofi/dracula.rasi
+rofi.lines: 3
+rofi.font: Fira Code Bold 9

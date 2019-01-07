@@ -102,3 +102,4 @@ alias dotfiles="cd ${DOTFILES_PATH}"
 alias gitdir="cd /media/boek/in/git"
 
 source "${DOTFILES_PATH}/sources/nvim-aliases.sh"
+export PATH=$PATH:$HOME/Android/Sdk/platform-tools/
