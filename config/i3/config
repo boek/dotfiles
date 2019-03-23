@@ -30,7 +30,7 @@ font pango:System San Francisco Display 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -197,7 +197,7 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+d exec rofi -show run
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always feh --bg-scale $HOME/Pictures/synth.png
+exec_always feh --bg-scale /mnt/md0/to_sort/drive/wallpapers/poly_3.png 
 exec_always xrandr --output HDMI-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off --output DVI-D-1 --off --output DP-1 --off --output DP-4 --mode 2560x1440 --pos 2560x0 --rate 144.00 --rotate normal
 exec --no-startup-id xset dpms 0 0 240
-exec_always compton -f
+exec_always compton --config $HOME/.config/compton/compton.conf -f

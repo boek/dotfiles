@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export DOTFILES_PATH="/media/boek/in/git/boek/dotfiles"
+export DOTFILES_PATH="$HOME/git/boek/dotfiles"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/boek/.oh-my-zsh"
@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles="cd ${DOTFILES_PATH}"
-alias gitdir="cd /media/boek/in/git"
-
-source "${DOTFILES_PATH}/sources/nvim-aliases.sh"
-export PATH=$PATH:$HOME/Android/Sdk/platform-tools/
+alias gitdir="cd $HOME/git"
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$HOME/.bin:$HOME/Android/Sdk/platform-tools/
+export PATH="$HOME/.nodenv/bin:$PATH"
