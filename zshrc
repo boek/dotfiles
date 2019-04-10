@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -103,3 +103,5 @@ alias gitdir="cd $HOME/git"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$HOME/.bin:$HOME/Android/Sdk/platform-tools/
 export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+source $HOME/.cargo/env

@@ -55,10 +55,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -198,6 +198,10 @@ bindsym $mod+r mode "resize"
 bindsym $mod+d exec rofi -show run
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always feh --bg-scale /mnt/md0/to_sort/drive/wallpapers/poly_3.png 
-exec_always xrandr --output HDMI-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off --output DVI-D-1 --off --output DP-1 --off --output DP-4 --mode 2560x1440 --pos 2560x0 --rate 144.00 --rotate normal
+exec_always  xrandr --output DVI-D-0 --off --output HDMI-0 --mode 2560x1440 --pos 2560x0 --rotate left --output DP-5 --off --output DP-4 --primary --rate 144.0 --mode 2560x1440 --pos 0x296 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off 
 exec --no-startup-id xset dpms 0 0 240
 exec_always compton --config $HOME/.config/compton/compton.conf -f
+bindsym $mod+Shift+l exec "$HOME/.bin/lock.sh
+exec xautolock -time 10 -locker '$HOME/.bin/lock.sh' &
+exec xscreensaver &
+
