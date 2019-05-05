@@ -13,10 +13,17 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/vim-lsp'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'ElmCast/elm-vim'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
 filetype plugin indent on    " required
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 set colorcolumn=80
 set number
 set relativenumber
@@ -31,7 +38,7 @@ let g:onedark_termcolors=256
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-noremap <Leader>t :NERDTreeToggle<CR>
+noremap <Leader>n :NERDTreeToggle<CR>
 noremap <silent> <Leader>v :NERDTreeFind<CR>
 let g:airline#extensions#tabline#enabled = 1
 
@@ -43,4 +50,6 @@ let g:airline#extensions#tabline#enabled = 1
  let g:syntastic_always_populate_loc_list = 1
  let g:syntastic_auto_loc_list = 1
  let g:syntastic_check_on_open = 1
+ let g:elm_syntastic_show_warnings = 1
  let g:syntastic_check_on_wq = 0
+ let g:rustfmt_autosave = 1

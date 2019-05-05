@@ -45,6 +45,7 @@
 	border-bottom-size = 10
 	border-color = ${colors.transparent}
 	modules-center = i3
+    modules-left = i3mode
 
 [bar/dp_workspaces]
 	inherit = section/workspaces
@@ -56,7 +57,7 @@
 	tray-position = left
 
 [bar/primary]
-monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:DP-4}
 width = ${settings.barwidth}
 height = ${settings.barheight}
 ;offset-x = 1%
@@ -170,18 +171,24 @@ label-empty-padding = 2
 ; Separator in between workspaces
 ; label-separator = |
 
+[module/i3mode]
+type = internal/i3
+format = <label-mode>
+
+label-mode = 
+label-mode-padding = 2
+label-mode-foreground = ${colors.primary}
+label-mode-background = ${colors.transparent}
+
+
 [module/i3]
 type = internal/i3
-format = <label-state> <label-mode>
+format = <label-state> 
 index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
-
-label-mode-padding = 2
-label-mode-foreground = #FF0000
-label-mode-background = ${colors.transparent}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
@@ -314,7 +321,7 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 5
-;format-prefix = "%{T2} %{T-} " 
+;format-prefix = "%{T2} %{T-} "
 date = %a %d %b  - %l:%M %p
 label = %date%
 
@@ -324,10 +331,10 @@ type = internal/pulseaudio
 sink = alsa_output.usb-SteelSeries_SteelSeries_Arctis_7-00.analog-stereo
 
 format-volume = <ramp-volume> <bar-volume>
-label-volume =%{T1} %{T-} 
+label-volume =%{T1} %{T-}
 label-volume-foreground = ${root.foreground}
 
-label-muted =  
+label-muted = 
 label-muted-foreground = #666
 
 bar-volume-width = 10

@@ -204,4 +204,4 @@ exec_always compton --config $HOME/.config/compton/compton.conf -f
 bindsym $mod+Shift+l exec "$HOME/.bin/lock.sh
 exec xautolock -time 10 -locker '$HOME/.bin/lock.sh' &
 exec xscreensaver &
-
+exec_always setxkbmap -option caps:escape
