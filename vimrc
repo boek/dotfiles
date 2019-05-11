@@ -1,3 +1,4 @@
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -5,7 +6,6 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'joshdick/onedark.vim'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -15,6 +15,8 @@ Plugin 'prabirshrestha/vim-lsp'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ElmCast/elm-vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'chriskempson/base16-vim'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
@@ -33,15 +35,16 @@ set incsearch
 set hlsearch
 
 syntax on
-colorscheme onedark
-let g:onedark_termcolors=256
+set background=dark
+colorscheme base16-material-palenight
+set termguicolors
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 noremap <Leader>n :NERDTreeToggle<CR>
 noremap <silent> <Leader>v :NERDTreeFind<CR>
 let g:airline#extensions#tabline#enabled = 1
-
+let g:airline_theme='wombat'
 
  set statusline+=%#warningmsg#
  set statusline+=%{SyntasticStatuslineFlag()}
