@@ -6,19 +6,12 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'bling/vim-airline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'rust-lang/rust.vim'
-Plugin 'prabirshrestha/async.vim'
-Plugin 'prabirshrestha/vim-lsp'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'ElmCast/elm-vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'chriskempson/base16-vim'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'autozimu/LanguageClient-neovim'
+Plugin 'ionide/Ionide-vim'
 
 call vundle#end()
+set runtimepath+=~/.vim-plugins/LanguageClient-neovim
+set rtp+=/usr/bin/fzf
 
 filetype plugin indent on    " required
 set tabstop=4
@@ -35,24 +28,6 @@ set incsearch
 set hlsearch
 
 syntax on
-set background=dark
-colorscheme base16-material-palenight
-set termguicolors
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-noremap <Leader>n :NERDTreeToggle<CR>
-noremap <silent> <Leader>v :NERDTreeFind<CR>
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='wombat'
-
- set statusline+=%#warningmsg#
- set statusline+=%{SyntasticStatuslineFlag()}
- set statusline+=%*
-
- let g:syntastic_always_populate_loc_list = 1
- let g:syntastic_auto_loc_list = 1
- let g:syntastic_check_on_open = 1
- let g:elm_syntastic_show_warnings = 1
- let g:syntastic_check_on_wq = 0
- let g:rustfmt_autosave = 1
+let g:LanguageClient_serverCommands = {
+  \ 'fsharp': g:fsharp#languageserver_command
+  \ }
