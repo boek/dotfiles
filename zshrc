@@ -102,6 +102,9 @@ alias dotfiles="cd ${DOTFILES_PATH}"
 alias gitdir="cd $HOME/git"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$HOME/.bin:$HOME/Android/Sdk/platform-tools/
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-source $HOME/.cargo/env
+
+
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
