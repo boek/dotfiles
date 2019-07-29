@@ -131,7 +131,7 @@ interval = 25
 
 mount-0 = /
 mount-1 = /mnt/md0
-mount-2 = /media/boek/in
+mount-2 = /mnt/in
 
 ;format-prefix = " "
 ;format-prefix-foreground = ${colors.foreground}

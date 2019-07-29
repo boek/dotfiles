@@ -30,7 +30,7 @@ font pango:System San Francisco Display 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -196,12 +196,9 @@ bindsym $mod+r mode "resize"
 #}
 
 bindsym $mod+d exec rofi -show run
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always feh --bg-fill $HOME/Pictures/wallpaper3.jpg --bg-fill $HOME/Pictures/vert3.jpg
-exec_always  xrandr --output DVI-D-0 --off --output HDMI-0 --mode 2560x1440 --pos 2560x0 --rotate left --output DP-5 --off --output DP-4 --primary --rate 144.0 --mode 2560x1440 --pos 0x296 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off 
+exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id feh --bg-fill $HOME/Pictures/wallpaper3.jpg --bg-fill $HOME/Pictures/vert3.jpg
+exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 2560x1440 --pos 2560x0 --rotate left --output DP-5 --off --output DP-4 --primary --rate 144.0 --mode 2560x1440 --pos 0x296 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off 
 exec --no-startup-id xset dpms 0 0 240
-exec_always compton --config $HOME/.config/compton/compton.conf -f
-bindsym $mod+Shift+l exec "$HOME/.bin/lock.sh
-exec xautolock -time 10 -locker '$HOME/.bin/lock.sh' &
-exec xscreensaver &
-exec_always setxkbmap -option caps:escape
+exec --no-startup-id compton --config $HOME/.config/compton/compton.conf -f
+exec --no-startup-id setxkbmap -option caps:escape
