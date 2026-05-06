@@ -4,7 +4,8 @@
 depends = []
 
 [default.files]
-"zshrc" = "~/.zshrc"
+"zshrc"         = "~/.zshrc"
+"config/zellij" = "~/.config/zellij"
 
 [default.variables]
 
