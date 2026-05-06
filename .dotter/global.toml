@@ -4,6 +4,7 @@
 depends = []
 
 [default.files]
+"zshrc" = "~/.zshrc"
 
 [default.variables]
 
