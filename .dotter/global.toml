@@ -7,6 +7,7 @@ depends = []
 "zshrc"          = "~/.zshrc"
 "config/zellij"  = "~/.config/zellij"
 "config/ghostty" = "~/.config/ghostty"
+"config/gh"      = "~/.config/gh"
 
 [default.variables]
 
