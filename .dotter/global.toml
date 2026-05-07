@@ -4,10 +4,11 @@
 depends = []
 
 [default.files]
-"zshrc"          = "~/.zshrc"
-"config/zellij"  = "~/.config/zellij"
-"config/ghostty" = "~/.config/ghostty"
-"config/gh"      = "~/.config/gh"
+"zshrc"             = "~/.zshrc"
+"config/zellij"     = "~/.config/zellij"
+"config/ghostty"    = "~/.config/ghostty"
+"config/gh"         = "~/.config/gh"
+"config/helix"      = "~/.config/helix"
 
 [default.variables]
 
