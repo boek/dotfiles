@@ -310,8 +310,24 @@ web_client {
  
 // Choose the theme that is specified in the themes section.
 // Default: default
-// 
-theme "tokyo-night-storm"
+//
+theme "carbonfox"
+
+themes {
+    carbonfox {
+        fg "#f2f4f8"
+        bg "#161616"
+        black "#282828"
+        red "#ee5396"
+        green "#25be6a"
+        yellow "#08bdba"
+        blue "#78a9ff"
+        magenta "#be95ff"
+        cyan "#33b1ff"
+        white "#dfdfe0"
+        orange "#f6953b"
+    }
+}
  
 // Choose the base input mode of zellij.
 // Default: normal
