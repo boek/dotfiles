@@ -1,5 +1,8 @@
 theme = "carbon"
 
+[editor.file-picker]
+hidden =  false
+
 [keys.normal.space]
 ret = ":lsp-workspace-command jump"
 t   = ":lsp-workspace-command today"
