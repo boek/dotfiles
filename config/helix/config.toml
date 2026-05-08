@@ -1,1 +1,5 @@
 theme = "carbon"
+
+[keys.normal.space]
+ret = ":lsp-workspace-command jump"
+t   = ":lsp-workspace-command today"
