@@ -23,8 +23,19 @@ dotter-setup:
 	fi
 
 dotter-deploy:
-	@echo "Deploying dotfiles with Dotter..."
-	dotter deploy
+	@dry_run=$$(dotter deploy --dry-run 2>&1); \
+	if [ -z "$$dry_run" ]; then \
+		echo "Nothing to deploy."; \
+	else \
+		echo "$$dry_run"; \
+		read -n 1 -p "Deploy? [y/N] " confirm; echo; \
+		if [ "$$confirm" = "y" ] || [ "$$confirm" = "Y" ]; then \
+			dotter deploy; \
+		else \
+			echo "Aborted."; \
+			exit 1; \
+		fi \
+	fi
 
 brew-sync:
 	brew bundle dump --force
