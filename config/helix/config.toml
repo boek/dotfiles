@@ -6,3 +6,10 @@ hidden =  false
 [keys.normal.space]
 ret = ":lsp-workspace-command jump"
 t   = ":lsp-workspace-command today"
+
+[keys.normal.space.b]
+b = "buffer_picker"
+s = ":write"
+
+[keys.normal.space.i]
+d = ":insert-output zsh -ic fancy_date"
