@@ -3,12 +3,14 @@ theme = "carbon"
 [editor.file-picker]
 hidden =  false
 
-[keys.normal.space]
-ret = ":lsp-workspace-command jump"
+[keys.normal.space.g.n]
 t   = ":lsp-workspace-command today"
+n   = ":lsp-workspace-command tomorrow"
+p   = ":lsp-workspace-command yesterday"
 
 [keys.normal.space.b]
 b = "buffer_picker"
+d = ":buffer-close"
 s = ":write"
 
 [keys.normal.space.i]
