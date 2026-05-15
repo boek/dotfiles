@@ -15,3 +15,16 @@ s = ":write"
 
 [keys.normal.space.i]
 d = ":insert-output zsh -ic fancy_date"
+
+[editor]
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
