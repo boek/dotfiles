@@ -3,6 +3,9 @@ theme = "carbon"
 [editor.file-picker]
 hidden =  false
 
+[keys.normal]
+X = "extend_line_above"
+
 [keys.normal.space.g.n]
 t   = ":lsp-workspace-command today"
 n   = ":lsp-workspace-command tomorrow"
@@ -20,6 +23,9 @@ d = ":insert-output zsh -ic fancy_date"
 x   = ["extend_to_line_bounds", ":pipe sed 's/\\[.\\]/[x]/'"]
 ">" = ["extend_to_line_bounds", ":pipe sed 's/\\[.\\]/[>]/'"]
 " " = ["extend_to_line_bounds", ":pipe sed 's/\\[.\\]/[ ]/'"]
+c   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?//'"]
+l   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?/- /'"]
+t   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?/- [ ] /'"]
 
 [editor]
 color-modes = true
