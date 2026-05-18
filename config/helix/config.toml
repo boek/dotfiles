@@ -6,10 +6,11 @@ hidden =  false
 [keys.normal]
 X = "extend_line_above"
 
-[keys.normal.space.g.n]
+[keys.normal.space.n]
 t   = ":lsp-workspace-command today"
 n   = ":lsp-workspace-command tomorrow"
 p   = ":lsp-workspace-command yesterday"
+i   = ":open Inbox.md"
 
 [keys.normal.space.b]
 b = "buffer_picker"
