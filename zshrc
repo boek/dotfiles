@@ -11,6 +11,10 @@ source $ZSH/oh-my-zsh.sh
    export VISUAL="hx"
  fi
 
+if [[ "$TERM" == *256color* ]]; then
+  export COLORTERM=truecolor
+fi
+
 export PATH="$HOME/.local/bin:$PATH"
 
 fancy_date() {
