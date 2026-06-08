@@ -1,6 +1,9 @@
-font-family = "Fira Code"
-font-size   = 20
-theme       = Carbonfox 
+font-family   = "Monaspace"
+font-size     = 20
+custom-shader = ./shaders/bloom.glsl
+custom-shader = ./shaders/bettercrt.glsl
+custom-shader = ./shaders/tft.glsl
+
 # Background and foreground colors
 background = #0a0f09
 foreground = #95ff80
