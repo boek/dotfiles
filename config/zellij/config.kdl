@@ -311,9 +311,22 @@ web_client {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "carbonfox"
+theme "fallout"
 
 themes {
+    fallout {
+        fg "#95ff80"
+        bg "#0a0f09"
+        black "#050804"
+        red "#ff5555"
+        green "#95ff80"
+        yellow "#6ebf5d"
+        blue "#62a058"
+        magenta "#7bcf6b"
+        cyan "#487041"
+        white "#95ff80"
+        orange "#d4b84f"
+    }
     carbonfox {
         fg "#f2f4f8"
         bg "#161616"
@@ -373,6 +386,13 @@ default_layout "compact"
 //   - false
 // 
 // pane_frames false
+
+ui {
+    pane_frames {
+        hide_session_name true
+        hide_plugin_names true
+    }
+}
  
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
