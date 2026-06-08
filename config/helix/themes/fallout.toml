@@ -121,6 +121,7 @@
 "ui.virtual.ruler" = { bg = "panel" }
 "ui.virtual.whitespace" = "dim-green"
 "ui.virtual.indent-guide" = "dim-green"
+"ui.virtual.wrap" = "wrap-green"
 "ui.virtual.inlay-hint" = { fg = "muted-green", bg = "terminal-black" }
 "ui.virtual.jump-label" = { fg = "danger", bg = "terminal-black", modifiers = ["bold"] }
 
@@ -154,6 +155,7 @@ panel = "#10180e"
 cursorline = "#111d0f"
 selection = "#1b2a17"
 selection-primary = "#2e402a"
+wrap-green = "#182415"
 dim-green = "#2e402a"
 muted-green = "#487041"
 soft-green = "#62a058"
