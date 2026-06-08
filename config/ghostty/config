@@ -1,3 +1,26 @@
 font-family = "Fira Code"
 font-size   = 20
 theme       = Carbonfox 
+# Background and foreground colors
+background = #0a0f09
+foreground = #95ff80
+
+# Standard colors
+palette = 0=#050804
+palette = 1=#FF5555
+palette = 2=#95ff80
+palette = 3=#487041
+palette = 4=#6ebf5d
+palette = 5=#7bcf6b
+palette = 6=#62a058
+palette = 7=#95ff80
+
+# Bright colors
+palette = 8=#95ff80
+palette = 9=#FF5555
+palette = 10=#7bcf6b
+palette = 11=#6ebf5d
+palette = 12=#62a058
+palette = 13=#487041
+palette = 14=#2e402a
+palette = 15=#95ff80

@@ -1,0 +1,165 @@
+# Syntax highlighting
+
+"attribute" = { fg = "terminal-green", modifiers = ["italic"] }
+
+"type" = { fg = "soft-green", modifiers = ["italic"] }
+"type.builtin" = { fg = "bright-green", modifiers = ["bold"] }
+"type.enum.variant" = "glow-green"
+
+"constructor" = { fg = "bright-green", modifiers = ["bold"] }
+
+"constant" = "bright-green"
+"constant.builtin" = { fg = "bright-green", modifiers = ["bold"] }
+"constant.character" = "terminal-green"
+"constant.character.escape" = "glow-green"
+"constant.numeric" = "soft-green"
+
+"string" = "terminal-green"
+"string.regexp" = "glow-green"
+"string.special" = "soft-green"
+"string.special.symbol" = "bright-green"
+"string.special.url" = { fg = "bright-green", modifiers = ["underlined"] }
+
+"comment" = { fg = "muted-green", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "muted-green", modifiers = ["italic"] }
+
+"variable" = "terminal-green"
+"variable.builtin" = { fg = "bright-green", modifiers = ["bold"] }
+"variable.parameter" = { fg = "glow-green", modifiers = ["italic"] }
+"variable.other.member" = { fg = "soft-green", modifiers = ["italic"] }
+
+"label" = { fg = "bright-green", modifiers = ["italic"] }
+
+"punctuation" = "terminal-green"
+"punctuation.special" = "bright-green"
+"punctuation.bracket" = "soft-green"
+"punctuation.delimiter" = "soft-green"
+
+"keyword" = { fg = "bright-green", modifiers = ["bold"] }
+"keyword.control" = { fg = "bright-green", modifiers = ["bold"] }
+"keyword.control.conditional" = { fg = "bright-green", modifiers = ["bold"] }
+"keyword.control.repeat" = { fg = "bright-green", modifiers = ["bold"] }
+"keyword.control.import" = { fg = "glow-green", modifiers = ["bold"] }
+"keyword.control.return" = { fg = "danger", modifiers = ["bold"] }
+"keyword.control.exception" = { fg = "danger", modifiers = ["bold"] }
+"keyword.operator" = "bright-green"
+"keyword.function" = { fg = "terminal-green", modifiers = ["bold", "italic"] }
+"keyword.storage" = { fg = "glow-green", modifiers = ["bold"] }
+"keyword.storage.modifier" = { fg = "soft-green", modifiers = ["italic"] }
+
+"operator" = "bright-green"
+
+"function" = { fg = "bright-green", modifiers = ["bold"] }
+"function.builtin" = { fg = "terminal-green", modifiers = ["bold"] }
+"function.method" = { fg = "bright-green", modifiers = ["bold"] }
+"function.macro" = { fg = "glow-green", modifiers = ["bold", "italic"] }
+
+"tag" = "soft-green"
+"tag.builtin" = { fg = "soft-green", modifiers = ["bold"] }
+
+"namespace" = { fg = "terminal-green", modifiers = ["italic"] }
+
+"special" = "glow-green"
+
+# Markup
+"markup.heading" = { fg = "bright-green", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "dim-green", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "terminal-green", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "bright-green", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "soft-green", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "glow-green", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "terminal-green", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "muted-green", modifiers = ["bold"] }
+"markup.list" = "bright-green"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "bright-green", modifiers = ["underlined"] }
+"markup.link.text" = "terminal-green"
+"markup.quote" = { fg = "muted-green", modifiers = ["italic"] }
+"markup.raw" = "soft-green"
+
+# Diff
+"diff.plus" = "terminal-green"
+"diff.minus" = "danger"
+"diff.delta" = "bright-green"
+"diff.delta.moved" = "glow-green"
+
+# UI elements
+"ui.background" = { fg = "terminal-green", bg = "terminal-black" }
+"ui.background.separator" = { fg = "dim-green" }
+
+"ui.cursor" = { fg = "terminal-black", bg = "terminal-green" }
+"ui.cursor.normal" = { fg = "terminal-black", bg = "terminal-green" }
+"ui.cursor.insert" = { fg = "terminal-black", bg = "bright-green" }
+"ui.cursor.select" = { fg = "terminal-black", bg = "glow-green" }
+"ui.cursor.match" = { fg = "terminal-black", bg = "soft-green" }
+
+"ui.cursor.primary" = { fg = "terminal-black", bg = "terminal-green" }
+"ui.cursor.primary.normal" = { fg = "terminal-black", bg = "terminal-green" }
+"ui.cursor.primary.insert" = { fg = "terminal-black", bg = "bright-green" }
+"ui.cursor.primary.select" = { fg = "terminal-black", bg = "glow-green" }
+
+"ui.linenr" = { fg = "dim-green" }
+"ui.linenr.selected" = { fg = "terminal-green", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "terminal-green", bg = "panel" }
+"ui.statusline.inactive" = { fg = "muted-green", bg = "panel" }
+"ui.statusline.normal" = { fg = "terminal-black", bg = "terminal-green", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "terminal-black", bg = "bright-green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "terminal-black", bg = "glow-green", modifiers = ["bold"] }
+
+"ui.popup" = { fg = "terminal-green", bg = "panel" }
+"ui.popup.info" = { fg = "bright-green", bg = "panel" }
+"ui.window" = { fg = "dim-green" }
+"ui.help" = { fg = "terminal-green", bg = "panel" }
+
+"ui.text" = "terminal-green"
+"ui.text.focus" = { fg = "terminal-green", bg = "selection", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "muted-green" }
+"ui.text.info" = { fg = "bright-green" }
+
+"ui.virtual.ruler" = { bg = "panel" }
+"ui.virtual.whitespace" = "dim-green"
+"ui.virtual.indent-guide" = "dim-green"
+"ui.virtual.inlay-hint" = { fg = "muted-green", bg = "terminal-black" }
+"ui.virtual.jump-label" = { fg = "danger", bg = "terminal-black", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection-primary" }
+"ui.cursorline.primary" = { bg = "cursorline" }
+
+"ui.highlight" = { bg = "selection", modifiers = ["bold"] }
+"ui.highlight.frameline" = { bg = "danger-dim" }
+
+"ui.menu" = { fg = "terminal-green", bg = "panel" }
+"ui.menu.selected" = { fg = "terminal-black", bg = "terminal-green", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "bright-green", bg = "selection" }
+
+# Diagnostics
+"diagnostic" = { fg = "muted-green" }
+"diagnostic.error" = { underline = { color = "danger", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "warning", style = "curl" } }
+"diagnostic.info" = { underline = { color = "bright-green", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "soft-green", style = "curl" } }
+
+"error" = "danger"
+"warning" = "warning"
+"info" = "bright-green"
+"hint" = "soft-green"
+
+[palette]
+terminal-black = "#0a0f09"
+black = "#050804"
+panel = "#10180e"
+cursorline = "#111d0f"
+selection = "#1b2a17"
+selection-primary = "#2e402a"
+dim-green = "#2e402a"
+muted-green = "#487041"
+soft-green = "#62a058"
+bright-green = "#6ebf5d"
+glow-green = "#7bcf6b"
+terminal-green = "#95ff80"
+danger = "#ff5555"
+danger-dim = "#371111"
+warning = "#d4b84f"
