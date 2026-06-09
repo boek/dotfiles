@@ -1,0 +1,11 @@
+# Machine-specific zsh config — copy to ~/.zshrc.local and edit.
+# This file is sourced at the end of zshrc. It is NOT managed by dotter
+# and ~/.zshrc.local is never committed — put secrets and per-env vars here.
+#
+#   cp zshrc.local.example ~/.zshrc.local
+#
+# Examples:
+# export OPENAI_API_KEY="..."
+# export AWS_PROFILE="work"
+# export PATH="$HOME/some/machine/specific/bin:$PATH"
+# alias deploy="./scripts/deploy-this-machine.sh"

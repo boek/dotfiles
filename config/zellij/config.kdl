@@ -264,6 +264,244 @@ keybinds clear-defaults=true {
         bind "z" { ToggleFocusFullscreen; SwitchToMode "normal"; }
     }
 }
+themes {
+    carbonfox {
+        text_unselected {
+            base 223 223 224
+            background 40 40 40
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        text_selected {
+            base 223 223 224
+            background 22 22 22
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        ribbon_selected {
+            base 40 40 40
+            background 37 190 106
+            emphasis_0 238 83 150
+            emphasis_1 246 149 59
+            emphasis_2 190 149 255
+            emphasis_3 120 169 255
+        }
+        ribbon_unselected {
+            base 40 40 40
+            background 242 244 248
+            emphasis_0 238 83 150
+            emphasis_1 223 223 224
+            emphasis_2 120 169 255
+            emphasis_3 190 149 255
+        }
+        table_title {
+            base 37 190 106
+            background 0
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        table_cell_selected {
+            base 223 223 224
+            background 22 22 22
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        table_cell_unselected {
+            base 223 223 224
+            background 40 40 40
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        list_selected {
+            base 223 223 224
+            background 22 22 22
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        list_unselected {
+            base 223 223 224
+            background 40 40 40
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 37 190 106
+            emphasis_3 190 149 255
+        }
+        frame_selected {
+            base 37 190 106
+            background 0
+            emphasis_0 246 149 59
+            emphasis_1 51 177 255
+            emphasis_2 190 149 255
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 246 149 59
+            background 0
+            emphasis_0 190 149 255
+            emphasis_1 0
+            emphasis_2 246 149 59
+            emphasis_3 246 149 59
+        }
+        exit_code_success {
+            base 37 190 106
+            background 0
+            emphasis_0 51 177 255
+            emphasis_1 40 40 40
+            emphasis_2 190 149 255
+            emphasis_3 120 169 255
+        }
+        exit_code_error {
+            base 238 83 150
+            background 0
+            emphasis_0 8 189 186
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 190 149 255
+            player_2 120 169 255
+            player_3 0
+            player_4 8 189 186
+            player_5 51 177 255
+            player_6 0
+            player_7 238 83 150
+            player_8 0
+            player_9 0
+            player_10 0
+        }
+    }
+    fallout {
+        text_unselected {
+            base 149 255 128
+            background 5 8 4
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        text_selected {
+            base 149 255 128
+            background 10 15 9
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        ribbon_selected {
+            base 5 8 4
+            background 149 255 128
+            emphasis_0 255 85 85
+            emphasis_1 123 207 107
+            emphasis_2 110 191 93
+            emphasis_3 46 64 42
+        }
+        ribbon_unselected {
+            base 5 8 4
+            background 72 112 65
+            emphasis_0 255 85 85
+            emphasis_1 149 255 128
+            emphasis_2 46 64 42
+            emphasis_3 110 191 93
+        }
+        table_title {
+            base 149 255 128
+            background 0
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        table_cell_selected {
+            base 149 255 128
+            background 10 15 9
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        table_cell_unselected {
+            base 149 255 128
+            background 5 8 4
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        list_selected {
+            base 149 255 128
+            background 10 15 9
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        list_unselected {
+            base 149 255 128
+            background 5 8 4
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 149 255 128
+            emphasis_3 110 191 93
+        }
+        frame_selected {
+            base 149 255 128
+            background 0
+            emphasis_0 123 207 107
+            emphasis_1 98 160 88
+            emphasis_2 110 191 93
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 123 207 107
+            background 0
+            emphasis_0 110 191 93
+            emphasis_1 0
+            emphasis_2 123 207 107
+            emphasis_3 123 207 107
+        }
+        exit_code_success {
+            base 149 255 128
+            background 0
+            emphasis_0 98 160 88
+            emphasis_1 5 8 4
+            emphasis_2 110 191 93
+            emphasis_3 46 64 42
+        }
+        exit_code_error {
+            base 255 85 85
+            background 0
+            emphasis_0 212 184 79
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 110 191 93
+            player_2 46 64 42
+            player_3 0
+            player_4 212 184 79
+            player_5 98 160 88
+            player_6 0
+            player_7 255 85 85
+            player_8 0
+            player_9 0
+            player_10 0
+        }
+    }
+}
 
 // Plugin aliases - can be used to change the implementation of Zellij
 // changing these requires a restart to take effect
@@ -290,6 +528,11 @@ plugins {
 load_plugins {
     zellij:link
 }
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
 web_client {
     font "monospace"
 }
@@ -310,37 +553,18 @@ web_client {
  
 // Choose the theme that is specified in the themes section.
 // Default: default
-//
+// 
 theme "fallout"
-
-themes {
-    fallout {
-        fg "#487041"
-        bg "#0a0f09"
-        black "#050804"
-        red "#ff5555"
-        green "#95ff80"
-        yellow "#d4b84f"
-        blue "#2e402a"
-        magenta "#6ebf5d"
-        cyan "#62a058"
-        white "#95ff80"
-        orange "#7bcf6b"
-    }
-    carbonfox {
-        fg "#f2f4f8"
-        bg "#161616"
-        black "#282828"
-        red "#ee5396"
-        green "#25be6a"
-        yellow "#08bdba"
-        blue "#78a9ff"
-        magenta "#be95ff"
-        cyan "#33b1ff"
-        white "#dfdfe0"
-        orange "#f6953b"
-    }
-}
+ 
+// Theme to use when the host terminal reports a dark color palette.
+// Requires `theme_light` to also be set; otherwise `theme` is used.
+// 
+// theme_dark "dracula"
+ 
+// Theme to use when the host terminal reports a light color palette.
+// Requires `theme_dark` to also be set; otherwise `theme` is used.
+// 
+// theme_light "solarized-light"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -386,13 +610,6 @@ default_layout "compact"
 //   - false
 // 
 // pane_frames false
-
-ui {
-    pane_frames {
-        hide_session_name true
-        hide_plugin_names true
-    }
-}
  
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -568,7 +785,7 @@ ui {
 // Whether to show tips on startup
 // Default: true
 // 
-// show_startup_tips false
+show_startup_tips false
  
 // Whether to show release notes on first version run
 // Default: true

@@ -1,3 +1,24 @@
 [[language]]
 name             = "markdown"
 soft-wrap.enable = true
+
+[[language]]
+name       = "bash"
+file-types = [
+  { glob = ".zshrc" },
+  { glob = "zshrc" },
+  { glob = ".zshenv" },
+  { glob = ".zprofile" },
+  { glob = ".zlogin" },
+  { glob = ".zlogout" },
+  "sh",
+  "bash",
+  "zsh",
+]
+
+[language-server.kotlin-language-server]
+command = "kotlin-language-server"
+
+[[language]]
+name             = "kotlin"
+language-servers = ["kotlin-language-server"]

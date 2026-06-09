@@ -3,13 +3,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='hx'
-   export VISUAL="hx"
- fi
+export EDITOR='hx'
+export VISUAL="hx"
 
 if [[ "$TERM" == *256color* ]]; then
   export COLORTERM=truecolor
@@ -34,3 +29,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# Machine-specific config & secrets, never committed (see zshrc.local.example)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
