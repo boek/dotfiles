@@ -1,10 +1,23 @@
 theme = "fallout"
 
+[editor]
+color-modes = true
+gutters     = ["line-numbers", "spacer", "diff"]
+
 [editor.file-picker]
 hidden =  false
 
 [keys.normal]
 X = "extend_line_above"
+
+[keys.normal."\\"]
+r = ":config-reload"
+
+[keys.normal."\\".g]
+n = ":set gutters []"
+d = ':set gutters ["diff"]'
+a = ':set gutters ["line-numbers", "diff"]'
+
 
 [keys.normal.space.n]
 t   = ":lsp-workspace-command today"
@@ -28,9 +41,6 @@ c   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?//
 l   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?/- /'"]
 t   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?/- [ ] /'"]
 
-[editor]
-color-modes = true
-
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
@@ -40,3 +50,4 @@ select = "underline"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+right = ["version-control", "separator", "position"]
