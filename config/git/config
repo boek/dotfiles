@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Jeff Boek
+	email = j@jboek.com
+
+[init]
+	defaultBranch = main
+
+[color "diff"]
+	old = red reverse
+	new = green reverse

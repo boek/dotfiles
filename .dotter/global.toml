@@ -8,6 +8,7 @@ depends = []
 "config/zellij"       = "~/.config/zellij"
 "config/ghostty"      = "~/.config/ghostty"
 "config/gh"           = "~/.config/gh"
+"config/git"          = "~/.config/git"
 "config/lazygit"      = "~/.config/lazygit"
 "config/helix"        = "~/.config/helix"
 "config/gitui"        = "~/.config/gitui"
