@@ -12,6 +12,7 @@ depends = []
 "config/lazygit"      = "~/.config/lazygit"
 "config/helix"        = "~/.config/helix"
 "config/gitui"        = "~/.config/gitui"
+"config/tock"         = "~/.config/tock"
 
 [default.variables]
 

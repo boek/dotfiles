@@ -1,0 +1,21 @@
+backend: file
+check_updates: true
+export:
+    ical:
+        file_name: tock_export.ics
+file:
+    path: /Users/boek/.tock.txt
+language: eng
+last_update_check: 2026-06-11T14:46:58.368838-07:00
+sqlite:
+    path: /Users/boek/.tock.db
+time_format: "24"
+timewarrior:
+    use_tock_tag_colors: false
+    use_tock_tag_colors_calendar: false
+    use_tock_tag_colors_top_projects: false
+    use_tock_tag_colors_weekly_activity: false
+working_hours:
+    enabled: false
+    stop_at: ""
+    weekdays: mon,tue,wed,thu,fri
