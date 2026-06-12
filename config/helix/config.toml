@@ -50,4 +50,3 @@ select = "underline"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
-right = ["version-control", "separator", "position"]
