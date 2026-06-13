@@ -4,15 +4,16 @@
 depends = []
 
 [default.files]
-"zshrc"               = "~/.zshrc"
-"config/zellij"       = "~/.config/zellij"
-"config/ghostty"      = "~/.config/ghostty"
-"config/gh"           = "~/.config/gh"
-"config/git"          = "~/.config/git"
-"config/lazygit"      = "~/.config/lazygit"
-"config/helix"        = "~/.config/helix"
-"config/gitui"        = "~/.config/gitui"
-"config/tock"         = "~/.config/tock"
+"zshrc"                 = "~/.zshrc"
+"config/zellij"         = "~/.config/zellij"
+"config/ghostty"        = "~/.config/ghostty"
+"config/gh"             = "~/.config/gh"
+"config/git"            = "~/.config/git"
+"config/jj/config.toml" = "~/.config/jj/config.toml"
+"config/lazygit"        = "~/.config/lazygit"
+"config/helix"          = "~/.config/helix"
+"config/gitui"          = "~/.config/gitui"
+"config/tock"           = "~/.config/tock"
 
 [default.variables]
 

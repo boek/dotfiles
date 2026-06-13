@@ -1,0 +1,9 @@
+[user]
+name  = "Jeff Boek"
+email = "j@jboek.com"
+
+[colors]
+change_id = "red"
+commit_id = "red"
+"working_copy change_id" = "bright red"
+"working_copy commit_id" = "bright red"
