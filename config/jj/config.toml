@@ -7,3 +7,6 @@ change_id = "red"
 commit_id = "red"
 "working_copy change_id" = "bright red"
 "working_copy commit_id" = "bright red"
+
+[ui]
+default-command = "log"
