@@ -6,24 +6,24 @@ export:
 file:
     path: /Users/boek/.tock.txt
 language: eng
-last_update_check: 2026-06-11T14:46:58.368838-07:00
+last_update_check: 2026-06-20T07:15:18.611781-07:00
 sqlite:
     path: /Users/boek/.tock.db
-time_format: "24"
 theme:
+    faint: '#2e402a'
+    highlight: '#7bcf6b'
     name: custom
-    primary: "#95ff80"
-    secondary: "#6ebf5d"
-    text: "#95ff80"
-    sub_text: "#487041"
-    faint: "#2e402a"
-    highlight: "#7bcf6b"
-    tag: "#62a058"
+    primary: '#95ff80'
+    secondary: '#6ebf5d'
+    sub_text: '#487041'
+    tag: '#62a058'
     tag_colors:
-        urgent: "#ff5555"
-        warning: "#d4b84f"
-        work: "#95ff80"
-        personal: "#6ebf5d"
+        personal: '#6ebf5d'
+        urgent: '#ff5555'
+        warning: '#d4b84f'
+        work: '#95ff80'
+    text: '#95ff80'
+time_format: "24"
 timewarrior:
     use_tock_tag_colors: false
     use_tock_tag_colors_calendar: false

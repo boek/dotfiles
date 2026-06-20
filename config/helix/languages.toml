@@ -1,6 +1,7 @@
 [[language]]
 name             = "markdown"
 soft-wrap.enable = true
+auto-pairs       = false
 
 [[language]]
 name       = "bash"
