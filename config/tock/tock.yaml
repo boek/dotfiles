@@ -10,19 +10,14 @@ last_update_check: 2026-06-20T07:15:18.611781-07:00
 sqlite:
     path: /Users/boek/.tock.db
 theme:
-    faint: '#1b2a17'
-    highlight: '#2e402a'
+    faint: '8'      # weekly activity bars
+    highlight: '3'  # Days with activity in calendar
     name: custom
-    primary: '#95ff80'
-    secondary: '#6ebf5d'
-    sub_text: '#62a058'
-    tag: '#7bcf6b'
-    tag_colors:
-        personal: '#6ebf5d'
-        urgent: '#ff5555'
-        warning: '#d4b84f'
-        work: '#95ff80'
-    text: '#95ff80'
+    primary: '4'    # Top project bars, selected calendar day
+    secondary: '#B58900'  # current calendar day
+    text: '3'      # Header Text
+    sub_text: '7'   # All other text
+    tag: '2'        # Green
 time_format: "24"
 timewarrior:
     use_tock_tag_colors: false

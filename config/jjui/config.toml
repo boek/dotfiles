@@ -1,0 +1,50 @@
+[ui.colors]
+"text" = { fg = "#95ff80", bg = "#0a0f09" }
+"dimmed" = { fg = "#62a058" }
+"selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"border" = { fg = "#62a058" }
+"title" = { fg = "#95ff80", bold = true }
+"shortcut" = { fg = "#d4b84f", bold = true }
+"matched" = { fg = "#95ff80", bg = "#1b2a17", underline = true }
+
+"revset title" = { fg = "#7bcf6b", bold = true }
+"revset text" = { fg = "#95ff80", bg = "#0a0f09", bold = true }
+"revset completion selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"revset completion matched" = { fg = "#d4b84f", bold = true }
+"revset completion dimmed" = { fg = "#62a058" }
+
+"revisions" = { fg = "#95ff80", bg = "#0a0f09" }
+"revisions selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"revisions dimmed" = { fg = "#62a058" }
+
+"oplog selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"evolog selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+
+"status" = { fg = "#95ff80", bg = "#10180e" }
+"status title" = { fg = "#050804", bg = "#95ff80", bold = true }
+"status shortcut" = { fg = "#d4b84f", bold = true }
+"status dimmed" = { fg = "#62a058" }
+
+"menu" = { fg = "#95ff80", bg = "#10180e" }
+"menu selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"menu matched" = { fg = "#d4b84f", bold = true }
+"menu dimmed" = { fg = "#62a058" }
+"menu border" = { fg = "#62a058" }
+"menu title" = { fg = "#95ff80", bold = true }
+"menu shortcut" = { fg = "#d4b84f", bold = true }
+
+"help" = { fg = "#95ff80", bg = "#10180e" }
+"help title" = { fg = "#95ff80", bold = true, underline = true }
+"help border" = { fg = "#62a058" }
+
+"preview" = { fg = "#95ff80", bg = "#0a0f09" }
+"preview border" = { fg = "#62a058" }
+
+"confirmation" = { fg = "#95ff80", bg = "#10180e" }
+"confirmation selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"confirmation dimmed" = { fg = "#62a058" }
+"confirmation border" = { fg = "#d4b84f" }
+
+"undo" = { fg = "#95ff80", bg = "#10180e" }
+"undo confirmation selected" = { fg = "#95ff80", bg = "#2e402a", bold = true }
+"undo confirmation dimmed" = { fg = "#62a058" }

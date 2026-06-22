@@ -10,6 +10,7 @@ depends = []
 "config/gh"               = "~/.config/gh"
 "config/git"              = "~/.config/git"
 "config/jj/config.toml"   = "~/.config/jj/config.toml"
+"config/jjui"             = "~/.config/jjui"
 "config/lazygit"          = "~/.config/lazygit"
 "config/helix"            = "~/.config/helix"
 "config/gitui"            = "~/.config/gitui"
