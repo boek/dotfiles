@@ -10,13 +10,13 @@ last_update_check: 2026-06-20T07:15:18.611781-07:00
 sqlite:
     path: /Users/boek/.tock.db
 theme:
-    faint: '#2e402a'
-    highlight: '#7bcf6b'
+    faint: '#1b2a17'
+    highlight: '#2e402a'
     name: custom
     primary: '#95ff80'
     secondary: '#6ebf5d'
-    sub_text: '#487041'
-    tag: '#62a058'
+    sub_text: '#62a058'
+    tag: '#7bcf6b'
     tag_colors:
         personal: '#6ebf5d'
         urgent: '#ff5555'
