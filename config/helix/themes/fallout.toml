@@ -70,13 +70,19 @@
 "markup.heading.4" = { fg = "glow-green", modifiers = ["bold"] }
 "markup.heading.5" = { fg = "terminal-green", modifiers = ["bold"] }
 "markup.heading.6" = { fg = "muted-green", modifiers = ["bold"] }
-"markup.list" = "bright-green"
-"markup.bold" = { modifiers = ["bold"] }
-"markup.italic" = { modifiers = ["italic"] }
+"markup.list" = { fg = "bright-green", modifiers = ["bold"] }
+"markup.list.checked" = { fg = "muted-green", modifiers = ["crossed_out"] }
+"markup.list.unchecked" = { fg = "warning", modifiers = ["bold"] }
+"markup.bold" = { fg = "terminal-green", modifiers = ["bold"] }
+"markup.italic" = { fg = "glow-green", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "muted-green", modifiers = ["crossed_out"] }
 "markup.link.url" = { fg = "bright-green", modifiers = ["underlined"] }
-"markup.link.text" = "terminal-green"
+"markup.link.text" = { fg = "terminal-green", modifiers = ["bold"] }
+"markup.link.label" = "soft-green"
 "markup.quote" = { fg = "muted-green", modifiers = ["italic"] }
-"markup.raw" = "soft-green"
+"markup.raw" = { fg = "soft-green", bg = "panel" }
+"markup.raw.inline" = { fg = "warning", bg = "panel" }
+"markup.raw.block" = { fg = "soft-green", bg = "panel" }
 
 # Diff
 "diff.plus" = "terminal-green"
