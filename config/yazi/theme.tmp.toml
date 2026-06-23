@@ -1,0 +1,135 @@
+[app]
+overall = { bg = "#0a0f09" }
+
+[mgr]
+cwd = { fg = "#95ff80", bold = true }
+find_keyword = { fg = "#050804", bg = "#95ff80", bold = true }
+find_position = { fg = "#d4b84f", bold = true }
+symlink_target = { fg = "#62a058" }
+marker_copied = { fg = "#050804", bg = "#7bcf6b", bold = true }
+marker_cut = { fg = "#050804", bg = "#ff5555", bold = true }
+marker_marked = { fg = "#050804", bg = "#d4b84f", bold = true }
+marker_selected = { fg = "#050804", bg = "#95ff80", bold = true }
+count_copied = { fg = "#7bcf6b", bold = true }
+count_cut = { fg = "#ff5555", bold = true }
+count_selected = { fg = "#95ff80", bold = true }
+border_symbol = "|"
+border_style = { fg = "#2e402a" }
+
+[indicator]
+parent = { fg = "#62a058", bg = "#10180e" }
+current = { fg = "#050804", bg = "#95ff80", bold = true }
+preview = { fg = "#7bcf6b", bg = "#10180e" }
+padding = { open = "", close = "" }
+
+[tabs]
+active = { fg = "#050804", bg = "#95ff80", bold = true }
+inactive = { fg = "#62a058", bg = "#10180e" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#050804", bg = "#95ff80", bold = true }
+normal_alt = { fg = "#95ff80", bg = "#2e402a" }
+select_main = { fg = "#050804", bg = "#d4b84f", bold = true }
+select_alt = { fg = "#d4b84f", bg = "#2e402a" }
+unset_main = { fg = "#050804", bg = "#ff5555", bold = true }
+unset_alt = { fg = "#ff5555", bg = "#2e402a" }
+
+[status]
+overall = { fg = "#95ff80", bg = "#10180e" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+perm_type = { fg = "#7bcf6b", bold = true }
+perm_read = { fg = "#95ff80" }
+perm_write = { fg = "#d4b84f" }
+perm_exec = { fg = "#ff5555" }
+perm_sep = { fg = "#2e402a" }
+progress_label = { fg = "#95ff80", bold = true }
+progress_normal = { fg = "#95ff80", bg = "#2e402a" }
+progress_error = { fg = "#ff5555", bg = "#371111" }
+
+[which]
+cols = 3
+mask = { bg = "#0a0f09" }
+cand = { fg = "#d4b84f", bold = true }
+rest = { fg = "#62a058" }
+desc = { fg = "#95ff80" }
+separator = " -> "
+separator_style = { fg = "#2e402a" }
+
+[confirm]
+border = { fg = "#d4b84f" }
+title = { fg = "#95ff80", bold = true }
+body = { fg = "#95ff80" }
+list = { fg = "#62a058" }
+btn_yes = { fg = "#050804", bg = "#ff5555", bold = true }
+btn_no = { fg = "#050804", bg = "#95ff80", bold = true }
+btn_labels = [" yes ", " no "]
+
+[spot]
+border = { fg = "#62a058" }
+title = { fg = "#95ff80", bold = true }
+tbl_col = { fg = "#050804", bg = "#7bcf6b", bold = true }
+tbl_cell = { fg = "#95ff80", bg = "#1b2a17" }
+
+[notify]
+title_info = { fg = "#95ff80", bold = true }
+title_warn = { fg = "#d4b84f", bold = true }
+title_error = { fg = "#ff5555", bold = true }
+
+[pick]
+border = { fg = "#62a058" }
+active = { fg = "#050804", bg = "#95ff80", bold = true }
+inactive = { fg = "#95ff80" }
+
+[input]
+border = { fg = "#62a058" }
+title = { fg = "#95ff80", bold = true }
+value = { fg = "#95ff80" }
+selected = { fg = "#050804", bg = "#95ff80", bold = true }
+
+[cmp]
+border = { fg = "#62a058" }
+active = { fg = "#050804", bg = "#95ff80", bold = true }
+inactive = { fg = "#95ff80" }
+icon_file = ""
+icon_folder = ""
+icon_command = ""
+
+[tasks]
+border = { fg = "#62a058" }
+title = { fg = "#95ff80", bold = true }
+hovered = { fg = "#050804", bg = "#95ff80", bold = true }
+
+[help]
+on = { fg = "#d4b84f", bold = true }
+run = { fg = "#7bcf6b" }
+desc = { fg = "#95ff80" }
+hovered = { fg = "#050804", bg = "#95ff80", bold = true }
+footer = { fg = "#62a058", bg = "#10180e" }
+icon_info = "i"
+icon_warn = "!"
+icon_error = "x"
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#d4b84f" },
+  { mime = "{audio,video}/*", fg = "#7bcf6b" },
+  { mime = "application/{zip,gzip,x-tar,x-bzip*,x-7z-compressed,x-rar}", fg = "#d4b84f" },
+  { mime = "inode/empty", fg = "#2e402a" },
+  { url = "*", is = "orphan", fg = "#ff5555", bold = true },
+  { url = "*", is = "exec", fg = "#95ff80", bold = true },
+  { url = "*", is = "link", fg = "#7bcf6b" },
+  { url = "*/", fg = "#95ff80", bold = true },
+  { url = "*", fg = "#62a058" },
+]
+
+[icon]
+prepend_conds = [
+  { if = "orphan", text = "!", fg = "#ff5555" },
+  { if = "link", text = "@", fg = "#7bcf6b" },
+  { if = "dir", text = "/", fg = "#95ff80" },
+  { if = "exec", text = "*", fg = "#d4b84f" },
+  { if = "!dir", text = "-", fg = "#62a058" },
+]

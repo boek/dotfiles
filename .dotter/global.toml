@@ -16,6 +16,7 @@ depends = []
 "config/gitui"            = "~/.config/gitui"
 "config/tock"             = "~/.config/tock"
 "config/moxide"           = "~/.config/moxide"
+"config/yazi"             = "~/.config/yazi"
 
 [default.variables]
 
