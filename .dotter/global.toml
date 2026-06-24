@@ -17,6 +17,7 @@ depends = []
 "config/tock"             = "~/.config/tock"
 "config/moxide"           = "~/.config/moxide"
 "config/yazi"             = "~/.config/yazi"
+"config/tuxedo"           = "~/.config/tuxedo"
 
 [default.variables]
 
