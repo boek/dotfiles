@@ -2,3 +2,4 @@
 .DS_Store
 .dotter/cache.toml
 .dotter/local.toml
+config/tuxedo/config.toml

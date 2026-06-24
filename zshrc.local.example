@@ -8,4 +8,5 @@
 # export OPENAI_API_KEY="..."
 # export AWS_PROFILE="work"
 # export PATH="$HOME/some/machine/specific/bin:$PATH"
+# export TODO_DIR="$HOME"
 # alias deploy="./scripts/deploy-this-machine.sh"
