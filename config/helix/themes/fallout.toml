@@ -69,20 +69,20 @@
 "markup.heading.3" = { fg = "soft-green", modifiers = ["bold"] }
 "markup.heading.4" = { fg = "glow-green", modifiers = ["bold"] }
 "markup.heading.5" = { fg = "terminal-green", modifiers = ["bold"] }
-"markup.heading.6" = { fg = "muted-green", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "faded-green", modifiers = ["bold"] }
 "markup.list" = { fg = "bright-green", modifiers = ["bold"] }
-"markup.list.checked" = { fg = "muted-green", modifiers = ["crossed_out"] }
+"markup.list.checked" = { fg = "faded-green", modifiers = ["crossed_out"] }
 "markup.list.unchecked" = { fg = "warning", modifiers = ["bold"] }
 "markup.bold" = { fg = "terminal-green", modifiers = ["bold"] }
 "markup.italic" = { fg = "glow-green", modifiers = ["italic"] }
-"markup.strikethrough" = { fg = "muted-green", modifiers = ["crossed_out"] }
+"markup.strikethrough" = { fg = "faded-green", modifiers = ["crossed_out"] }
 "markup.link.url" = { fg = "bright-green", modifiers = ["underlined"] }
 "markup.link.text" = { fg = "terminal-green", modifiers = ["bold"] }
 "markup.link.label" = "soft-green"
-"markup.quote" = { fg = "muted-green", modifiers = ["italic"] }
-"markup.raw" = { fg = "soft-green", bg = "panel" }
-"markup.raw.inline" = { fg = "warning", bg = "panel" }
-"markup.raw.block" = { fg = "soft-green", bg = "panel" }
+"markup.quote" = { fg = "faded-green", modifiers = ["italic"] }
+"markup.raw" = { fg = "soft-green", bg = "code-bg" }
+"markup.raw.inline" = { fg = "warning", bg = "code-bg" }
+"markup.raw.block" = { fg = "soft-green", bg = "code-bg" }
 
 # Diff
 "diff.plus" = "terminal-green"
@@ -158,12 +158,14 @@
 terminal-black = "#0a0f09"
 black = "#050804"
 panel = "#10180e"
+code-bg = "#142411"
 cursorline = "#111d0f"
 selection = "#1b2a17"
 selection-primary = "#2e402a"
 wrap-green = "#182415"
 dim-green = "#2e402a"
 muted-green = "#62a058"
+faded-green = "#4a7a43"
 soft-green = "#62a058"
 bright-green = "#6ebf5d"
 glow-green = "#7bcf6b"

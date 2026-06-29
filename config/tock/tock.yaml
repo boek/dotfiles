@@ -6,18 +6,18 @@ export:
 file:
     path: /Users/boek/.tock.txt
 language: eng
-last_update_check: 2026-06-20T07:15:18.611781-07:00
+last_update_check: 2026-06-28T21:08:31.398898-07:00
 sqlite:
     path: /Users/boek/.tock.db
 theme:
-    faint: '8'      # weekly activity bars
-    highlight: '3'  # Days with activity in calendar
+    faint: "8"
+    highlight: "3"
     name: custom
-    primary: '4'    # Top project bars, selected calendar day
-    secondary: '#B58900'  # current calendar day
-    text: '3'      # Header Text
-    sub_text: '7'   # All other text
-    tag: '2'        # Green
+    primary: "4"
+    secondary: '#B58900'
+    sub_text: "7"
+    tag: "2"
+    text: "3"
 time_format: "24"
 timewarrior:
     use_tock_tag_colors: false
