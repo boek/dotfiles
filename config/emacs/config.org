@@ -1,0 +1,56 @@
+#+title: Emacs config
+#+auto_tangle: t
+
+This file is tangled to =config.el= and loaded by =init.el= via
+=org-babel-load-file=. Add sections as you need them; this starting point
+is intentionally sparse.
+
+* Defaults
+
+Sane behavior that isn't worth a package.
+
+#+begin_src emacs-lisp
+(setq inhibit-startup-screen t)
+(setq ring-bell-function 'ignore)
+(setq use-short-answers t)
+
+(global-auto-revert-mode 1)
+(save-place-mode 1)
+(show-paren-mode 1)
+
+;; Keep backup/autosave files out of the working directory.
+(let ((backup-dir (expand-file-name "backups/" user-emacs-directory)))
+  (make-directory backup-dir t)
+  (setq backup-directory-alist `((".*" . ,backup-dir))
+        auto-save-file-name-transforms `((".*" ,backup-dir t))))
+#+end_src
+
+* Completion
+
+Vertico for the minibuffer, orderless for fuzzy matching, marginalia for
+annotations.
+
+#+begin_src emacs-lisp
+(use-package vertico
+  :init (vertico-mode))
+
+(use-package orderless
+  :custom (completion-styles '(orderless basic)))
+
+(use-package marginalia
+  :init (marginalia-mode))
+#+end_src
+
+* Discoverability
+
+#+begin_src emacs-lisp
+(use-package which-key
+  :init (which-key-mode))
+#+end_src
+
+* Version control
+
+#+begin_src emacs-lisp
+(use-package magit
+  :commands (magit-status))
+#+end_src
