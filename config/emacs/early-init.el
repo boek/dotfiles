@@ -13,3 +13,8 @@
 
 ;; Native-comp warnings from third-party packages are noise, not actionable.
 (setq native-comp-async-report-warnings-errors nil)
+
+;; This config is dotter-managed: ~/.config/emacs/*.el/.org are intentionally
+;; symlinks into the git-controlled dotfiles repo. Always follow them instead
+;; of prompting on every startup/visit.
+(setq vc-follow-symlinks t)
