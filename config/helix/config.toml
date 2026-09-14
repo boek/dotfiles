@@ -31,7 +31,7 @@ d = ":buffer-close"
 s = ":write"
 
 [keys.normal.space.i]
-d = ":insert-output zsh -ic fancy_date"
+d = ':insert-output date "+%%B %%-d, %%Y"'
 
 [keys.normal.space.t]
 x   = ["extend_to_line_bounds", ":pipe sed 's/\\[.\\]/[x]/'"]
