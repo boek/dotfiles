@@ -838,3 +838,4 @@ mouse_hover_effects false
 
 stacked_pane_list false
 pane_frame_style "full"
+stacked_pane_list false
