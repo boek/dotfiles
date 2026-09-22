@@ -1,4 +1,4 @@
-theme = "fallout"
+theme = "terminal"
 
 [editor]
 color-modes = true

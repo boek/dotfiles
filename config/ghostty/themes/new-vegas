@@ -6,7 +6,7 @@ selection-foreground = #090603
 selection-background = #d9a34a
 
 # Standard colors
-palette = 0=#090603
+palette = 0=#2a1d0c
 palette = 1=#ff7040
 palette = 2=#bf8b36
 palette = 3=#e6b85c

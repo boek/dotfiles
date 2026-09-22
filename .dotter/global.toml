@@ -6,6 +6,7 @@ depends = []
 [default.files]
 "agents"                  = "~/.agents"
 "zshrc"                   = "~/.zshrc"
+"scripts/terminal-colors" = "~/.local/bin/terminal-colors"
 "config/zellij"           = "~/.config/zellij"
 "config/ghostty"          = "~/.config/ghostty"
 "config/gh"               = "~/.config/gh"

@@ -1,0 +1,24 @@
+#!/bin/sh
+# Preview the current terminal palette using ANSI colors, not fixed RGB values.
+
+printf '\nTerminal palette\n'
+printf 'Default foreground / background:  AaBbCc 0123456789\n\n'
+printf '     Color             Swatch    Foreground sample\n'
+
+index=0
+for name in black red green yellow blue magenta cyan white \
+    bright-black bright-red bright-green bright-yellow \
+    bright-blue bright-magenta bright-cyan bright-white; do
+    if [ "$index" -lt 8 ]; then
+        foreground=$((30 + index))
+        background=$((40 + index))
+    else
+        foreground=$((90 + index - 8))
+        background=$((100 + index - 8))
+    fi
+
+    printf '%2d   %-17s \033[%sm        \033[0m  \033[%smAaBbCc 0123456789\033[0m\n' \
+        "$index" "$name" "$background" "$foreground"
+    index=$((index + 1))
+done
+printf '\n'
