@@ -1,0 +1,26 @@
+# Amber Pip-Boy palette inspired by Fallout: New Vegas
+# Background and foreground colors
+background = #100c05
+foreground = #ffce80
+selection-foreground = #090603
+selection-background = #d9a34a
+
+# Standard colors
+palette = 0=#090603
+palette = 1=#ff7040
+palette = 2=#bf8b36
+palette = 3=#e6b85c
+palette = 4=#a6752e
+palette = 5=#d9a34a
+palette = 6=#bf8b36
+palette = 7=#ffce80
+
+# Bright colors
+palette = 8=#a6752e
+palette = 9=#ff7040
+palette = 10=#d9a34a
+palette = 11=#e6b85c
+palette = 12=#ffce80
+palette = 13=#ffce80
+palette = 14=#d9a34a
+palette = 15=#ffce80
