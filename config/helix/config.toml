@@ -1,6 +1,7 @@
 theme = "terminal"
 
 [editor]
+clipboard-provider = "termcode"
 color-modes = true
 gutters     = ["line-numbers", "spacer", "diff"]
 
@@ -42,6 +43,12 @@ x   = ["extend_to_line_bounds", ":pipe sed 's/\\[.\\]/[x]/'"]
 c   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?//'"]
 l   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?/- /'"]
 t   = ["extend_to_line_bounds", ":pipe sed -E 's/^[[:space:]]*(- (\\[.\\] )?)?/- [ ] /'"]
+
+[keys.normal."]"]
+l = '@/\[[^]]+\]\([^)]+\)<ret>'
+
+[keys.normal."["]
+l = '@?\[[^]]+\]\([^)]+\)<ret>'
 
 [editor.cursor-shape]
 insert = "bar"
