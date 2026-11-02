@@ -1,5 +1,7 @@
 ;;; $DOOMDIR/packages.el -*- lexical-binding: t; no-byte-compile: t -*-
 
+(package! agent-shell :recipe (:host github :repo "xenodium/agent-shell"))
+
 ;; To install a package:
 ;;
 ;;   1. Declare them here in a `package!' statement,
