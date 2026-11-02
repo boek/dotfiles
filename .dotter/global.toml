@@ -20,7 +20,7 @@ depends = []
 "config/moxide"           = "~/.config/moxide"
 "config/yazi"             = "~/.config/yazi"
 "config/tuxedo"           = "~/.config/tuxedo"
-"config/emacs"            = "~/.config/emacs"
+"config/doom"             = "~/.config/doom"
 
 [default.variables]
 
