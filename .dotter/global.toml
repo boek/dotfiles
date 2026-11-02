@@ -4,7 +4,7 @@
 depends = []
 
 [default.files]
-"agents"                  = "~/.agents"
+"agents"                  = { target = "~/.agents", type = "symbolic", recurse = false }
 "zshrc"                   = "~/.zshrc"
 "scripts/terminal-colors" = "~/.local/bin/terminal-colors"
 "config/zellij"           = "~/.config/zellij"
