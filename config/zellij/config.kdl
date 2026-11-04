@@ -835,3 +835,6 @@ mouse_hover_effects false
 // typically work best. Set to 0 to use the number of (physical) CPU cores.
 // Note: This only applies to web clients at the moment.
 // client_async_worker_tasks 4
+
+stacked_pane_list false
+pane_frame_style "full"
