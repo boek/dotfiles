@@ -11,6 +11,7 @@ if [[ "$TERM" == *256color* ]]; then
 fi
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.swiftly/bin:$PATH"
 
 export PNPM_HOME="/Users/boek/Library/pnpm"
 case ":$PATH:" in
