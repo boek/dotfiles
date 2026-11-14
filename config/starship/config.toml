@@ -1,13 +1,83 @@
-# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Inserts a blank line between shell prompts
+# Minimal Pip-Boy readout in green phosphor.
+# Plain text and box drawing only; no icon font required.
+palette = "pipboy"
 add_newline = true
 
-# Replace the '❯' symbol in the prompt with '➜'
-[character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+format = """
+[╭─](muted) $directory$vcs
+[╰─](muted)$status$character"""
 
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+style = "bold green"
+read_only = " [LOCKED]"
+read_only_style = "green"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+# Prefer jj in colocated repositories; retain Git for Git-only projects.
+[vcs]
+order = ["jj", "git"]
+jj_modules = "$jj_change$jj_bookmark$jj_status"
+git_modules = "$git_branch$git_status"
+
+[jj_change]
+format = '[· ](muted)$change '
+change_hash_length = 5
+prefix_style = "bold green"
+suffix_style = "muted"
+change_offset_style = "bold green"
+
+[jj_bookmark]
+format = '[$bookmark(@$remote)$diverged]($style) '
+style = "muted"
+truncation_length = 24
+truncation_symbol = "…"
+
+[jj_status]
+format = '([$all]($style) )'
+style = "green"
+conflicted = "! "
+description_empty = ""
+immutable = ""
+added = '+$count '
+copied = '=$count '
+deleted = '-$count '
+modified = '~$count '
+renamed = '>$count '
+
+[git_branch]
+format = '[· ](muted)[$branch]($style) '
+style = "muted"
+truncation_length = 24
+truncation_symbol = "…"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "green"
+conflicted = "CONFLICT "
+ahead = 'UP:${count} '
+behind = 'DOWN:${count} '
+diverged = 'UP:${ahead_count} DOWN:${behind_count} '
+untracked = '?${count} '
+stashed = 'STASH:${count} '
+modified = '~${count} '
+staged = '+${count} '
+renamed = '>${count} '
+deleted = '-${count} '
+
+[status]
+disabled = false
+format = '[ ERR:$status](bold green)'
+
+[character]
+success_symbol = '[ >](bold green)'
+error_symbol = '[ >](bold green)'
+vimcmd_symbol = '[ <](bold green)'
+
+[palettes.pipboy]
+green = "#95ff80"
+muted = "#62a058"
