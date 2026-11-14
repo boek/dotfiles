@@ -1,45 +1,29 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Minimal Pip-Boy readout in green phosphor.
-# Plain text and box drawing only; no icon font required.
-palette = "pipboy"
+# Match Zellij's ANSI theme using the terminal palette.
+# Powerline directory, changed-file counts, and line diff.
 add_newline = true
 
-format = """
-[╭─](muted) $directory$vcs
-[╰─](muted)$status$character"""
+format = "$directory$vcs$status$character"
 
 [directory]
-format = '[$path]($style)[$read_only]($read_only_style) '
-style = "bold green"
+format = '[ $path ]($style)[$read_only]($read_only_style)[](fg:green bg:black)'
+style = "bold fg:black bg:green"
 read_only = " [LOCKED]"
-read_only_style = "green"
-truncation_length = 3
-truncation_symbol = "…/"
+read_only_style = "fg:black bg:green"
+truncation_length = 1
+truncation_symbol = ""
 truncate_to_repo = false
 
 # Prefer jj in colocated repositories; retain Git for Git-only projects.
 [vcs]
 order = ["jj", "git"]
-jj_modules = "$jj_change$jj_bookmark$jj_status"
-git_modules = "$git_branch$git_status"
-
-[jj_change]
-format = '[· ](muted)$change '
-change_hash_length = 5
-prefix_style = "bold green"
-suffix_style = "muted"
-change_offset_style = "bold green"
-
-[jj_bookmark]
-format = '[$bookmark(@$remote)$diverged]($style) '
-style = "muted"
-truncation_length = 24
-truncation_symbol = "…"
+jj_modules = "$jj_status$jj_metrics"
+git_modules = "$git_status$git_metrics"
 
 [jj_status]
-format = '([$all]($style) )'
-style = "green"
+format = '([ $all]($style))'
+style = "fg:yellow bg:black"
 conflicted = "! "
 description_empty = ""
 immutable = ""
@@ -49,15 +33,9 @@ deleted = '-$count '
 modified = '~$count '
 renamed = '>$count '
 
-[git_branch]
-format = '[· ](muted)[$branch]($style) '
-style = "muted"
-truncation_length = 24
-truncation_symbol = "…"
-
 [git_status]
-format = '([$all_status$ahead_behind]($style) )'
-style = "green"
+format = '([ $all_status]($style))'
+style = "fg:yellow bg:black"
 conflicted = "CONFLICT "
 ahead = 'UP:${count} '
 behind = 'DOWN:${count} '
@@ -69,15 +47,20 @@ staged = '+${count} '
 renamed = '>${count} '
 deleted = '-${count} '
 
+[jj_metrics]
+format = '[ +$added](fg:green bg:black)[ -$deleted ](fg:red bg:black)'
+only_nonzero_diffs = false
+
+[git_metrics]
+disabled = false
+format = '[ +$added](fg:green bg:black)[ -$deleted ](fg:red bg:black)'
+only_nonzero_diffs = false
+
 [status]
 disabled = false
-format = '[ ERR:$status](bold green)'
+format = '[ ERR:$status ](bold fg:red bg:black)'
 
 [character]
-success_symbol = '[ >](bold green)'
-error_symbol = '[ >](bold green)'
-vimcmd_symbol = '[ <](bold green)'
-
-[palettes.pipboy]
-green = "#95ff80"
-muted = "#62a058"
+success_symbol = '[](black)'
+error_symbol = '[](black)'
+vimcmd_symbol = '[](yellow)'
