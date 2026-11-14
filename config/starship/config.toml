@@ -7,7 +7,7 @@ add_newline = true
 format = "$directory$vcs$status$character"
 
 [directory]
-format = '[ $path ]($style)[$read_only]($read_only_style)[](fg:green bg:black)'
+format = '[ $path ]($style)[$read_only]($read_only_style)[](fg:green bg:black)'
 style = "bold fg:black bg:green"
 read_only = " [LOCKED]"
 read_only_style = "fg:black bg:green"
@@ -61,6 +61,6 @@ disabled = false
 format = '[ ERR:$status ](bold fg:red bg:black)'
 
 [character]
-success_symbol = '[](black)'
-error_symbol = '[](black)'
-vimcmd_symbol = '[](yellow)'
+success_symbol = '[](black)'
+error_symbol = '[](black)'
+vimcmd_symbol = '[](yellow)'
