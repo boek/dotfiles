@@ -23,6 +23,7 @@ a = ':set gutters ["line-numbers", "diff"]'
 t   = ":lsp-workspace-command today"
 n   = ":lsp-workspace-command tomorrow"
 p   = ":lsp-workspace-command yesterday"
+I   = ":open Index.md"
 i   = ":open Inbox.md"
 h   = ":open Home.md"
 

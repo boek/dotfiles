@@ -11,3 +11,7 @@ keybind = alt+left=unbind
 keybind = alt+right=unbind
 
 theme = fallout
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = #8bff79
+macos-icon-screen-color = #0a0f09,#95ff80

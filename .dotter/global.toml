@@ -21,6 +21,7 @@ depends = []
 "config/yazi"             = "~/.config/yazi"
 "config/tuxedo"           = "~/.config/tuxedo"
 "config/doom"             = "~/.config/doom"
+"config/starship"         = "~/.config/starship"
 
 [default.variables]
 
