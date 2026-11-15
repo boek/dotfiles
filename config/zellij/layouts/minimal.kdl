@@ -1,4 +1,4 @@
-// Mode and centered tabs in a single top row.
+// Session name and tabs above the panes, mode below.
 layout {
     default_tab_template {
         pane size=1 borderless=true {

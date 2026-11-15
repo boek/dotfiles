@@ -5,6 +5,8 @@
 #   cp zshrc.local.example ~/.zshrc.local
 #
 # Examples:
+# export NOTES_PATH="$HOME/notes"
+# export DOTFILES_PATH="$HOME/Developer/boek/dotfiles"
 # export OPENAI_API_KEY="..."
 # export AWS_PROFILE="work"
 # export PATH="$HOME/some/machine/specific/bin:$PATH"
