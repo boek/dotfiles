@@ -506,6 +506,33 @@ themes {
 // Plugin aliases - can be used to change the implementation of Zellij
 // changing these requires a restart to take effect
 plugins {
+    zjstatus location="https://github.com/dj95/zjstatus/releases/download/v0.25.0/zjstatus.wasm" {
+        format_left "{mode}"
+        format_center "{tabs}"
+        format_right "{datetime}"
+        datetime "#[fg=#6ebf5d,bold] {format} "
+        datetime_format "%H:%M"
+        datetime_timezone "America/Los_Angeles"
+        format_space ""
+        border_enabled "false"
+        mode_normal "#[fg=#6ebf5d,bold] NORMAL "
+        mode_locked "#[fg=#b7ff9e,bold] LOCKED "
+        mode_resize "#[fg=#b7ff9e,bold] RESIZE "
+        mode_pane "#[fg=#b7ff9e,bold] PANE "
+        mode_tab "#[fg=#b7ff9e,bold] TAB "
+        mode_scroll "#[fg=#b7ff9e,bold] SCROLL "
+        mode_enter_search "#[fg=#b7ff9e,bold] SEARCH "
+        mode_search "#[fg=#b7ff9e,bold] SEARCH "
+        mode_rename_tab "#[fg=#b7ff9e,bold] RENAME TAB "
+        mode_rename_pane "#[fg=#b7ff9e,bold] RENAME PANE "
+        mode_session "#[fg=#b7ff9e,bold] SESSION "
+        mode_move "#[fg=#b7ff9e,bold] MOVE "
+        mode_prompt "#[fg=#b7ff9e,bold] PROMPT "
+        mode_tmux "#[fg=#b7ff9e,bold] TMUX "
+        tab_normal "#[fg=#6ebf5d,bold]  {name}  "
+        tab_separator ""
+        tab_active "#[fg=#b7ff9e,bold][ {name} ]"
+    }
     about location="zellij:about"
     compact-bar location="zellij:compact-bar"
     configuration location="zellij:configuration"
@@ -555,7 +582,7 @@ web_client {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "ansi"
+theme "fallout"
  
 // Theme to use when the host terminal reports a dark color palette.
 // Requires `theme_light` to also be set; otherwise `theme` is used.
@@ -584,7 +611,7 @@ default_mode "normal"
 // The name of the default layout to load on startup
 // Default: "default"
 // 
-default_layout "compact"
+default_layout "minimal"
  
 // The folder in which Zellij will look for layouts
 // (Requires restart)
@@ -840,3 +867,4 @@ mouse_hover_effects false
 stacked_pane_list false
 pane_frame_style "full"
 stacked_pane_list false
+on_quit "quit"
