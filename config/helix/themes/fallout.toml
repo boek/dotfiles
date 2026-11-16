@@ -18,7 +18,7 @@
 "string.regexp" = "glow-green"
 "string.special" = "soft-green"
 "string.special.symbol" = "bright-green"
-"string.special.url" = { fg = "bright-green", modifiers = ["underlined"] }
+"string.special.url" = { fg = "bright-green" }
 
 "comment" = { fg = "muted-green", modifiers = ["italic"] }
 "comment.block.documentation" = { fg = "muted-green", modifiers = ["italic"] }
@@ -76,7 +76,7 @@
 "markup.bold" = { fg = "terminal-green", modifiers = ["bold"] }
 "markup.italic" = { fg = "glow-green", modifiers = ["italic"] }
 "markup.strikethrough" = { fg = "faded-green", modifiers = ["crossed_out"] }
-"markup.link.url" = { fg = "bright-green", modifiers = ["underlined"] }
+"markup.link.url" = { fg = "bright-green" }
 "markup.link.text" = { fg = "terminal-green", modifiers = ["bold"] }
 "markup.link.label" = "soft-green"
 "markup.quote" = { fg = "faded-green", modifiers = ["italic"] }

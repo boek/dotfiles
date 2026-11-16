@@ -1,3 +1,18 @@
 inherits = "base16_terminal"
 
 "ui.menu" = { fg = "default", bg = "black" }
+"markup.heading.1" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "cyan", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "magenta", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "light-green", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "light-cyan", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "light-magenta", modifiers = ["bold"] }
+"markup.raw" = { bg = "black" }
+"markup.raw.block" = { bg = "black" }
+"markup.heading.marker" = { modifiers = ["dim"] }
+"markup.link.url" = { fg = "green", modifiers = [] }
+"markup.link.text" = { fg = "red", modifiers = ["bold"] }
+"markup.link.label" = { fg = "yellow", modifiers = ["bold"] }
+"markup.list" = { modifiers = ["dim"] }
+"markup.quote" = { fg = "yellow" }
+"diagnostic" = { modifiers = [], underline = { color = "red", style = "curl" } }
