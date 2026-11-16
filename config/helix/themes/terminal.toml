@@ -11,8 +11,8 @@ inherits = "base16_terminal"
 "markup.raw.block" = { bg = "black" }
 "markup.heading.marker" = { modifiers = ["dim"] }
 "markup.link.url" = { fg = "green", modifiers = [] }
-"markup.link.text" = { fg = "red", modifiers = ["bold"] }
-"markup.link.label" = { fg = "yellow", modifiers = ["bold"] }
+"markup.link.text" = { fg = "light-green", modifiers = ["bold"] }
+"markup.link.label" = { fg = "light-green", modifiers = ["bold"] }
 "markup.list" = { modifiers = ["dim"] }
 "markup.quote" = { fg = "yellow" }
 "diagnostic" = { modifiers = [], underline = { color = "red", style = "curl" } }
