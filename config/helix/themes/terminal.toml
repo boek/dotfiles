@@ -1,5 +1,21 @@
 inherits = "base16_terminal"
 
+"variable" = { fg = "cyan" }
+"variable.builtin" = { fg = "light-cyan", modifiers = ["italic"] }
+"variable.parameter" = "light-gray"
+"variable.other.member" = "cyan"
+"type" = "light-magenta"
+"constructor" = "light-magenta"
+"function" = { fg = "light-blue", modifiers = ["bold"] }
+"function.macro" = "light-yellow"
+"keyword" = "magenta"
+"attribute" = "yellow"
+"constant" = "yellow"
+"constant.numeric" = "light-yellow"
+"string" = "light-green"
+"constant.character.escape" = { fg = "light-cyan", modifiers = ["bold"] }
+"comment" = { fg = "gray", modifiers = ["dim", "italic"] }
+
 "ui.menu" = { fg = "default", bg = "black" }
 "markup.heading.1" = { fg = "green", modifiers = ["bold"] }
 "markup.heading.2" = { fg = "cyan", modifiers = ["bold"] }
