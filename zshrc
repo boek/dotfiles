@@ -21,5 +21,14 @@ export STARSHIP_CONFIG=~/.config/starship/config.toml
 
 eval "$(starship init zsh)"
 
+if (( $+commands[atuin] )); then
+  eval "$(atuin init zsh --disable-up-arrow)"
+fi
+
 # Machine-specific config & secrets, never committed (see zshrc.local.example)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+export JOURNAL_DAILY_FORMAT='{MMMM} {d}, {yyyy}.md'   # November 25, 2026.md
+export JOURNAL_WEEKLY_FORMAT='{GGGG}-W{w}.md'         # 2026-W48.md, 2026-W9.md
+export JOURNAL_MONTHLY_FORMAT='{MMMM} {yyyy}.md'      # November 2026.md
+export JOURNAL_YEARLY_FORMAT='{yyyy}.md'              # 2026.md

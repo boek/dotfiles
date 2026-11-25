@@ -1,3 +1,6 @@
+brew "atuin"
+cask "claude-code"
+cask "codex"
 brew "dotter"
 brew "fennel"
 brew "fnlfmt"

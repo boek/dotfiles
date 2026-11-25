@@ -26,9 +26,9 @@ inherits = "base16_terminal"
 "markup.raw" = { bg = "black" }
 "markup.raw.block" = { bg = "black" }
 "markup.heading.marker" = { modifiers = ["dim"] }
-"markup.link.url" = { fg = "green", modifiers = [] }
-"markup.link.text" = { fg = "light-green", modifiers = ["bold"] }
-"markup.link.label" = { fg = "light-green", modifiers = ["bold"] }
+"markup.link.url" = { fg = "yellow", modifiers = [] }
+"markup.link.text" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.link.label" = { fg = "light-yellow", modifiers = ["bold"] }
 "markup.list" = { modifiers = ["dim"] }
 "markup.quote" = { fg = "yellow" }
 "diagnostic" = { modifiers = [], underline = { color = "red", style = "curl" } }
